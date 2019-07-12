@@ -5,6 +5,9 @@ public class FizzBuzz {
         if(student==3){
             return "Fizz";
         }
+        if(student ==5){
+            return "Buzz";
+        }
         return student+"";
     }
 }
