@@ -11,4 +11,10 @@ public class FizzTest {
          FizzBuzz fizzBuzz =new FizzBuzz();
          assertThat("1").isEqualTo(fizzBuzz.say());
     }
+    @Test
+    public void should_return_2_by_2(){
+        int number = 2;
+        FizzBuzz fizzBuzz =new FizzBuzz();
+        assertThat("2").isEqualTo(fizzBuzz.say());
+    }
 }
