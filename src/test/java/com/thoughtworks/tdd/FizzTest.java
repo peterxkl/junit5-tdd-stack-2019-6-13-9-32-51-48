@@ -41,4 +41,10 @@ public class FizzTest {
         FizzBuzz fizzBuzz =new FizzBuzz();
         assertThat("Whizz").isEqualTo(fizzBuzz.say(7));
     }
+    @Test
+    public void should_return_Buzz_by_10(){
+        int number = 10;
+        FizzBuzz fizzBuzz =new FizzBuzz();
+        assertThat("Buzz").isEqualTo(fizzBuzz.say(10));
+    }
 }
