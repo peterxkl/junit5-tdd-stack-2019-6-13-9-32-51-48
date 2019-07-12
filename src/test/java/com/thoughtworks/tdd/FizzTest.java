@@ -9,12 +9,18 @@ public class FizzTest {
     public void should_return_1_by_1(){
          int number = 1;
          FizzBuzz fizzBuzz =new FizzBuzz();
-         assertThat("1").isEqualTo(fizzBuzz.say());
+         assertThat("1").isEqualTo(fizzBuzz.say(1));
     }
     @Test
     public void should_return_2_by_2(){
         int number = 2;
         FizzBuzz fizzBuzz =new FizzBuzz();
-        assertThat("2").isEqualTo(fizzBuzz.say());
+        assertThat("2").isEqualTo(fizzBuzz.say(2));
+    }
+    @Test
+    public void should_return_Fizz_by_3(){
+        int number = 3;
+        FizzBuzz fizzBuzz =new FizzBuzz();
+        assertThat("Fizz").isEqualTo(fizzBuzz.say(3));
     }
 }
